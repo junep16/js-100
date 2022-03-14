@@ -46,7 +46,30 @@ function oxQuiz(a, b) {
 }
 oxQuiz(10, 3); 
 
-// 문제 24: 대문자로 바꾸기
+// 문제 24: 대문자로 바꾸기 / 소문자로 바꾸기
+
+let name = prompt();
+let newName = name.toUpperCase(); 
+console.log(newName); 
+
+let name2 = prompt();
+let newName2 = name2.toLowerCase(); 
+console.log(newName2); 
+
+
+// 문제 25: 원의 넓이를 구하세요 
+// 원의 넓이는 반지름의 길이 X 반지름의 길이 X 3.14로 구할 수 있음. 함수를 사용하여 코드 작성하기. 
+
+function findCircleWidth() {
+    let num = prompt(); 
+    return num*2*3.14; 
+}
+findCircleWidth()
+
+
+
+
+
 
 
 
