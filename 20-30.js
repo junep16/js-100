@@ -83,13 +83,49 @@ let planets = {
 function sayPlanetName() { 
     let name = prompt(); 
 
-    for (let planet in planets) {
-        if(name === planet) {
-            console.log(`${planets[planet]}`); 
-        } else {
-            console.log("행성 이름이 아닙니다")
-        }
+    switch (name) {
+        case "Mercury": 
+        console.log("수성"); 
+        break; 
+
+        case "Venus": 
+        console.log("금성"); 
+        break; 
+
+        case "Earth": 
+        console.log("지구"); 
+        break; 
+
+        case "Marse": 
+        console.log("화성"); 
+        break; 
+
+        case "Jupiter": 
+        console.log("목성"); 
+        break; 
+
+        case "Saturn": 
+        console.log("토성"); 
+        break; 
+
+        case "Uranus": 
+        console.log("천왕성"); 
+        break; 
+
+        case "Neptune": 
+        console.log("해왕성"); 
+        break; 
+
+        default: 
+        console.log("행성 이름이 아닙니다"); 
     }
+    // for (let planet in planets) {
+    //     if(name === planet) {
+    //         console.log(`${planets[planet]}`); 
+    //     } else {
+    //         console.log("행성 이름이 아닙니다")
+    //     }
+    // }
 }
 sayPlanetName(); 
 
