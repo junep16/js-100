@@ -130,6 +130,25 @@ function sayPlanetName() {
 sayPlanetName(); 
 
 
+// 문제 27: 객체 만들기
+// 이름과 점수를 입력하면 객체를 만들어 출력하기
+// 출력: {"Yujin" : 70, "Hyewon" : 100}
+
+let gradeList = {}; 
+function makeList () {
+    let names = []; 
+    let grades = []; 
+    let name = prompt();
+    let grade = prompt(); 
+    names.push(name); 
+    grades.push(grade); 
+
+    for(let i =0; i < names.length; i++) {
+        gradeList[names[i]] = grades[i]; 
+    }
+    return gradeList; 
+}
+makeList(); 
 
 
 
