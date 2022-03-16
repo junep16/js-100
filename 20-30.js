@@ -150,6 +150,16 @@ function makeList () {
 }
 makeList(); 
 
+// 문제: 28 문자열에서 2개의 연속된 요소를 출력하기 (2-gram)
+const word = "안녕하세요"
+for(let i =0; i < word.length-1; i++) {
+    console.log(word[i], word[i+1]); 
+}
+
+// 
+
+
+
 
 
 
