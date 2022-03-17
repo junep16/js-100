@@ -156,7 +156,13 @@ for(let i =0; i < word.length-1; i++) {
     console.log(word[i], word[i+1]); 
 }
 
-// 
+// 문제 29: 대문자 지나가기
+let alphabet = prompt();  
+if (alphabet === alphabet.toUpperCase()) {
+    console.log(alphabet, "대문자입니다"); 
+} if (alphabet !== alphabet.toUpperCase()) {
+    console.log(alphabet, "소문자입니다"); 
+}
 
 
 
