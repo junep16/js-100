@@ -164,6 +164,13 @@ if (alphabet === alphabet.toUpperCase()) {
     console.log(alphabet, "소문자입니다"); 
 }
 
+// 문제 30: 문자열 속 문자찾기 
+// pineapple is yummy 
+// apple 
+
+let words = "pineapple is yummy"; 
+words.forEach(index => console.log(index));
+
 
 
 
