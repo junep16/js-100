@@ -171,3 +171,20 @@ let words = "pineapple is yummy";
 let find = words.search("apple"); 
 console.log(find); 
 
+// 문제 32: 문자열 만들기 
+function countWords() {
+    let word = prompt(); 
+    let counts= word.split(" ");
+    console.log(counts); 
+    alert(`${counts.length}글자입니다요`); 
+}
+countWords(); 
+
+// 문제 33: 거꾸로 출력하기 
+// 한줄에 여러개의 숫자가 입력되면, 역순으로 그 숫자들을 하나씩 출력하는 프로그램을 작성
+let nums = prompt().split("");  
+let length = nums.length; 
+console.log(length); 
+for (let i = 0; i < length; i++) {
+    console.log(nums.pop()); 
+}
