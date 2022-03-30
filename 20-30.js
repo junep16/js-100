@@ -188,3 +188,11 @@ console.log(length);
 for (let i = 0; i < length; i++) {
     console.log(nums.pop()); 
 }
+
+// 문제 34: sort 구현하기 
+// 키가 주어지면 순서대로 제대로 섰는지 확인하는 프로그램을 작성해보자
+
+let unsorted = "176 156 155 165 166 169"; 
+let sorted = ""; 
+
+console.log(unsorted.split(" ").sort());
