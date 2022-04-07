@@ -196,3 +196,18 @@ let unsorted = "176 156 155 165 166 169";
 let sorted = ""; 
 
 console.log(unsorted.split(" ").sort());
+
+// 문제 35: Factory 함수 사용하기 
+function one(n) {
+    function two(x) {
+        return Math.pow(x , n); 
+    }
+    return two; 
+}
+const a = one(2); 
+const b = one(3); 
+const c = one(4); 
+
+console.log(a(10)); 
+console.log(b(10));
+console.log(b(10));
