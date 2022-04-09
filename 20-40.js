@@ -255,18 +255,33 @@ for(let i =0; i < student.length; i++){
 }
 countVote(student); 
 
-// 문제 38: 아르바이트
+// 문제 38: 아르바이트 점수 소팅
 let scores = [97, 86, 75, 66, 55, 97, 85, 97, 97, 95]; 
-let sortedScore = scores.sort();  
 
-// 숫자가 같으면 패스 
-sortedScore.forEach(element => {
-    let candidate = []; 
-    for(let i = 0; i < sortedScore.length; i++) {
-        if(element !== sortedScore[i]) {
-            candidate.push(element); 
-            console.log(candidate); 
+// 점수 sort한것 새로운 배열 생성, reverse로 큰 숫자순으로 정렬
+let sortedScore = scores.sort().reverse();  
+
+// 같은 점수이면 패스 
+function sortScores() {
+    let arr = [];
+    let count = 0;  
+    let check = false; 
+
+    sortedScore.forEach(element => {
+        if(sortedScore.indexOf(element) === element) {
+            count += 1;
+            arr.push(element); 
+            console.log(count, "넣음"); 
+            console.log(arr); 
+
+        }  else {
+            arr.push(element); 
+            console.log(arr); 
+            const set = new Set(arr); 
+            console.log(set); 
         }
-    }
-    console.log(candidate.length); 
-});
+        return count;   
+
+    });
+}
+sortScores();  
