@@ -285,3 +285,31 @@ function sortScores() {
     });
 }
 sortScores();  
+
+// 강사님 코드 
+const 점수 = ["97", "86", "75", "66", "55", "97", "85", "97", "97", "95", "85", "85", "85"]; 
+
+// 오름차순 정렬
+점수.sort(function(a, b) {
+    return a - b; 
+}); 
+console.log(점수); 
+
+let 탑쓰리 = []; 
+let count = 0; 
+
+while(탑쓰리.length < 4) {
+    let value = 점수.pop(); 
+
+    // includes = 있다면, true, 없다면, false
+    if (!탑쓰리.includes(value)) {
+        탑쓰리.push(value); 
+    }
+
+    // 몇명일까
+    count++; 
+}
+console.log(탑쓰리); 
+console.log(count - 1); 
+
+
