@@ -313,3 +313,25 @@ console.log(탑쓰리);
 console.log(count - 1); 
 
 
+// 문제 39: 오타 수정 
+let 입력 = prompt(); 
+console.log(입력.split("q").join("e")); 
+
+// 문제 40: 제한 무게 확인 및 몇명 탈 수 있는지 표시
+let 제한무게 = 50; 
+let 탑승수 = 5; 
+let 인원무게 = [20, 20, 20, 20, 20]; 
+
+let 총무게 = 0; 
+let 인원수 = 0; 
+
+for (let i = 0; i < 인원무게.length; i++ ) {
+    총무게 += 인원무게[i];  
+    if(총무게 < 제한무게) {
+        인원수++; 
+
+    }
+    console.log(인원수); 
+}  
+
+
