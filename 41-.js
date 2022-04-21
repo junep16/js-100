@@ -47,5 +47,16 @@ function findDay(month, date) {
     return weeks[day]; 
 }
 
+// 문제 45: getTime함수 사용하기 
+// 1970년도 부터 현재까지 흐른 시간 밀리세컨드로 출력하기 
+
+// 현재 시간 
+const theDate = new Date(); 
+
+console.log(Math.floor(theDate.getTime()/(60*60*24*365*1000))+1970); 
+
+
+
+
 
 
